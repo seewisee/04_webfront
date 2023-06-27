@@ -1,0 +1,230 @@
+*{box-sizing : border-box;}
+.container {
+    border: 1px solid black;
+    width: 1900px;
+    height: 950px;
+    margin: auto;
+}
+
+
+.header {
+    
+    width: 1900px;
+    height: 170px;
+    display: flex;
+    background-color: beige;
+}
+
+.logo {
+    width: 300px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-up {
+   
+    width: 1700px;
+    height: 50%;
+    
+    font-size: 20px;
+    margin: 0px -691px 0px 651px;
+    
+    
+    
+}
+
+.header-down {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  
+  
+}
+
+
+
+.button {
+    width: 20px;
+    font-size: 1.2em;
+    
+}
+
+.content{
+    display: flex;
+    border: 20px solid coral;
+    width: 1900px;
+    height: 400px;
+    background-color: pink;
+    
+}
+
+.content2 {
+    display: flex;
+    border: 1px solid black;
+    width: 1900px;
+    height: 95px;
+
+}
+
+#공지사항 {
+    background-color: black;
+    color: white;
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#프로모션 {
+    background-color: beige;
+    width: 25%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dd {
+    background-color: beige;
+    width: 25%;
+}
+
+.footer{
+    background-color: hsl(120, 31%, 15%);
+    width: 1900px;
+    height: 278px;
+    display: flex;
+}
+#plus{
+    cursor: pointer;
+    font-size: 1.9em;
+    border: 0; 
+    margin: 0px -220px -8px 230px;
+    background-color: black;
+}
+
+#down {
+    cursor: pointer;
+    font-size: 3em;
+    border: 0; 
+    margin: 0px -10px 5px 100px;
+    background-color: beige;
+}
+
+
+.summer {
+    width: 30%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sumb:hover {
+    background-color: white;
+    color: black;
+    
+}
+.sumb { transition-duration: 2s;}
+.sumb {
+    color: white;
+    background-color: pink;
+    border: 1px solid white;
+    width: 16%;
+    height: 18%;
+    border-radius: 10%;
+    margin:  0px -25px -165px -110px;
+
+}
+
+.mid {
+   width: 2000px;
+   height: 380px;
+   display: flex;
+}
+
+.mid2 {
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.cls1 {
+    width: 450px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cls2 {
+    color: white;
+    width: 65%;
+    font-size: 20px;
+    
+    
+ 
+}
+
+.cls3 {
+    color: white;
+    width: 60%;
+    font-size: 20px;
+    border:  1px solid black;
+    
+ 
+}
+
+
+#로그인 {
+    float: right;
+    width: 9%;
+    height: 50px;
+    border: 1px solid white;
+    background-color: hsl(120, 31%, 15%);
+    color: white;
+    margin: 0px 20px;
+    border-radius: 10px;
+}
+
+#회원가입 {
+    float: right;
+    width: 9%;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    
+}
+
+#선물하기 {
+    float: right;
+    width: 20%;
+    height: 50px;
+    border: 1px solid white;
+    background-color: hsl(120, 31%, 15%);
+    color: white;
+    border-radius: 10px;
+    margin: -35px 16px 15px 50px;
+}
+
+.fa-solid fa-magnifying-glass {
+    float: right;
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+
+   
+}
+
+
+
+
+
+

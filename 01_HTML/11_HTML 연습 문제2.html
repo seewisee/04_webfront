@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_연습문제 2</title>
+</head>
+
+<body>
+    <form action="11_HTML 연습문제2.html">
+
+        <fieldset>
+            <legend>납품자 정보</legend>
+            1. 납품자명 : <input type="text" name="납품자명"><br><br>
+            2. email : <input type="email" name="이메일"><br><br>
+            3. 홈페이지 : <input type="url" name="홈페이지" value="https://"><br><br>
+            4. 지역 : <select name="지역">
+                <option value="" selected>지역을 선택하세요</option>
+                <option value="부산">부산</option>
+                <option value="서울">서울</option>
+                <option value="강원">강원</option>
+                <option value="인천">인천</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>상품명 : <input type="text" name="상품명"></li><br>
+                <li>납품수량 : <input type="number" min="100" placeholder="최소 100" name="납품수량"></li><br>
+                <li> 납품등급 : <input type="range" name="납품등급"></li><br>
+                <li>기타사항 : <textarea rows="4" cols="20" name="기타사항"></textarea></li>
+            </ul>
+        </fieldset> <br>
+
+        <button type="submit">send message</button>
+
+
+    </form>
+
+</body>
+
+</html>

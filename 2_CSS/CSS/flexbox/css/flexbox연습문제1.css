@@ -1,0 +1,132 @@
+div{
+    border: 1px;
+    box-sizing: border-box;
+}
+
+.test{
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+}
+
+.float-right{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+
+    float: right;
+   
+}
+
+.float-left{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    float: left;
+}
+
+#center{
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+
+    /* 사방으로 요소를 당김 */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.float-left2{
+    width: 1500px;
+    height: 200px;
+    background-color: ghostwhite;
+    float: left;
+}
+.float3 {
+    background-color: red;
+   
+}
+
+.float-left3{
+    width: 50px;
+    height: 50px;
+    background-color: ghostwhite;
+    float: left;
+}
+
+.float-right2{
+    width: 50px;
+    height: 50px;
+    background-color: ghostwhite;
+    float: right;
+}
+
+.main{
+
+    border: 30px solid white;
+    display: flex;
+
+    border-radius: 400px;
+    flex-wrap: wrap;
+
+    justify-content :center;
+    align-content: center;
+    align-content: space-between;
+}
+
+
+
+.google {
+    border: 20px solid white;
+
+    display: flex;
+    height: 20px;
+
+    flex-wrap: wrap;
+
+    justify-content :center;
+    align-content: center;
+
+    border-radius: 100%;
+
+}
+
+#google{
+    border: 20px solid white;
+
+    height: 20px;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content :center;
+    align-content: center;
+
+    border-radius: 100%;
+}
+
+
+.googlemain{
+   
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content :center;
+    align-content: center;
+    border-radius: 10%;
+
+}
+
+.float-right1>.float-right {
+
+    color: blue;
+    
+    height: 30px;
+    width: 160px;
+    border: 1px solid gainsboro;
+    border-radius: 10%;
+}

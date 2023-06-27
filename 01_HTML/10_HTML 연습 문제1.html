@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_HTML 연습문제 1</title>
+</head>
+<body>
+    
+    <form action = "09_입력관련태그.html">
+
+    고객명 : <input type="text" name = "name"> <br><br>
+ 전화번호 :  <input type = "tel" size = "20" name ="phone"><br><br>
+    email : <input type = "email" size = "20" name = "email"> <br><br>
+
+    피자선택 : <select name = "sel">
+        <option value = ""selected>피자를 선택하세요</option>
+        <option value = "고구마피자">고구마피자</option>
+        <option value = "불고기피자">불고기피자</option>
+        <option value = "포테이토피자">포테이토피자</option>
+        <option value = "쉬림프피자">쉬림프피자</option>
+    </select>
+
+    <fieldset>
+        <legend>피자 사이즈</legend>
+        <label for = "small">small</label><input type ="radio" id = "small" name = "small"><br><br>
+        <label for = "Medlum">Medlum</label><input type ="radio" id = "Medlum" name = "Medlum"><br><br>
+        <label for = "Large">Large</label><input type ="radio" id = "Large" ><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <label for = "베이컨">베이컨</label>
+        <input type="checkbox" name = "베이컨" id = "베이컨"> <br><br>
+
+        <label for = "치즈">치즈</label>
+        <input type="checkbox" name = "치즈" id = "치즈"> <br><br>
+
+        <label for = "양파">양파</label>
+        <input type="checkbox" name = "양파" id = "양파"> <br><br>
+
+        <label for = "버섯">버섯</label>
+        <input type="checkbox" name = "버섯" id = "버섯"> 
+    </fieldset><br><br>
+
+    희망배송시간 : <input type="time" name = "time"> <br><br>
+
+    배송시 요청사항 :  <textarea rows = 3></textarea><br><br>
+
+    <button type="submit">주문하기</button>
+</form>
+
+</body>
+</html>
