@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제1</title>
+    <style>
+        * {
+            font-family: "Apple SD Gothic Neo";
+        }
+    </style>
+</head>
+    <h1>간이 계산기 만들기</h1>
+    첫번째 값: <input type="text" id="first"><br>
+    두번째 값: <input type="text" id="second"><br>
+    <!--
+        함수 호출 시 매개변수 this
+        -> 이벤트가 발생한 요소 자체를 의미한다.
+    -->
+    <button onclick="calculate(this)">+</button>
+    <button onclick="calculate(this)">-</button>
+    <button onclick="calculate(this)">*</button>
+    <button onclick="calculate(this)">/</button>
+    <button onclick="calculate(this)">%</button>
+    <br><br>
+    계산 결과: <span id="result"></span>
+
+    <script>
+        function calculate(btn) {
+            const num1 = Number(document.getElementById("first").value);
+            const num2 = Number(document.getElementById("second").value);
+
+            // eval("코드 형식 문자열")
+            // -> 작성된 문자열을 JS 코드로 해석
+            // -> 속도 + 보안 이슈가 있어서 사용 지양(사용하지 마,,)
+
+            //document.getElementById("result").innerText = eval(num1 + btn.innerText + num2)
+
+            document.getElementById("result").innerText = new Function(a, "return " + num1 + btn.innerText + num2)();
+        }
+    </script>
+</body>
+</html>

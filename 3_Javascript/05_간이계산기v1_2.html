@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제1</title>
+    <style>
+        * {
+            font-family: "Apple SD Gothic Neo";
+        }
+    </style>
+</head>
+    <h1>간이 계산기 만들기</h1>
+    <div>첫번째 값:
+        <input type="text" id="first">
+    </div>
+    <div>두번째 값:
+        <input type="text" id="second">
+    </div>
+    <div>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">/</button>
+        <button onclick="calculate('%')">%</button>
+    </div>
+    <br><br>
+    계산 결과: <span id="result"></span>
+
+    <script>
+        function calculate(op) {
+            const num1 = Number(document.getElementById("first").value);
+            const num2 = Number(document.getElementById("second").value);
+            let res = 0;
+            switch(op) {
+                case "+": res = num1 + num2; break;
+                case "-": res = num1 - num2; break;
+                case "*": res = num1 * num2; break;
+                case "/": res = num1 / num2; break;
+                case "%": res = num1 % num2;      
+            }
+            document.getElementById("result").innerText = res;
+        }
+    </script>
+</body>
+</html>

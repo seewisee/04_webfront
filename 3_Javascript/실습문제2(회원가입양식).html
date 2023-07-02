@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        * {
+            font-family: "Apple SD Gothic Neo"
+        }
+        fieldset {
+            width: 330px;
+        }
+        table {
+            text-align: left;
+        }
+        td {
+            width: 90px;
+        }
+        tr {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validate()">
+        <fieldset>
+            <table>
+                <legend>회원 가입 양식</legend>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" id="id"></td>
+                    <td><button>중복 확인</button></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" id="pwd"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호확인</td>
+                    <td><input type="password" id="pwd2"></td>
+                    <td><span id="pwd-confirm"></span></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" id="name"></td>
+                    <td><span id="name-confirm"></span></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        남<input type="radio" name="gender" value="m">
+                        여<input type="radio" name="gender" value="f">
+                    </td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><input type="tel" id="phone"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="text-align: right;"><input type="reset"> <button type="submit">회원가입</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <script src="js/실습문제2(회원가입양식).js"></script>
+</body>
+</html>

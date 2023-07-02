@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제1</title>
+    <style>
+        * {
+            font-family: "Apple SD Gothic Neo";
+        }
+    </style>
+</head>
+    <h1>간이 계산기 만들기</h1>
+    <div>첫번째 값:
+        <input type="text" id="first">
+    </div>
+    <div>두번째 값:
+        <input type="text" id="second">
+    </div>
+    <div>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="multiply()">*</button>
+        <button onclick="divide()">/</button>
+        <button onclick="modulo()">%</button>
+    </div>
+    <br><br>
+    계산 결과: <span id="result"></span>
+
+    <script>
+        const num1 = document.getElementById("first");
+        const num2 = document.getElementById("second");
+        const result = document.getElementById("result");
+
+        function plus() {
+            result.innerText = Number(num1.value) + Number(num2.value);
+        }
+        function minus() {
+            result.innerText = Number(num1.value) - Number(num2.value);
+        }
+        function multiply() {
+            result.innerText = Number(num1.value) * Number(num2.value);
+        }
+        function divide() {
+            result.innerText = Number(num1.value) / Number(num2.value);
+        }
+        function modulo() {
+            result.innerText = Number(num1.value) % Number(num2.value);
+        }
+    </script>
+</body>
+</html>
