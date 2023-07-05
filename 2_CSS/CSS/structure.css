@@ -1,6 +1,6 @@
 *{box-sizing : border-box;}
 
-div{ border: 1px solid black;}
+/*div{ border: 1px solid black;}*/
 
 .container {
     width : 1140px;
@@ -81,6 +81,11 @@ div{ border: 1px solid black;}
     color:  #455ba8;
     background-color: white;
     border: 0; /* none도 가능 */
+}
+
+form[name = "login-form"] > label {
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 /* nav */
